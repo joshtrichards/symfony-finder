@@ -58,6 +58,7 @@ class ExcludeDirectoryFilterIterator extends \FilterIterator implements \Recursi
 
         if ($patternsAbsolute) {
             $this->excludedPatternAbsolute = '#^('.implode('|', $patternsAbsolute).')$#';
+        }
 
         parent::__construct($iterator);
     }
